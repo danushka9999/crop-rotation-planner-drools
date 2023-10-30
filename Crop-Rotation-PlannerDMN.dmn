@@ -62,37 +62,20 @@
       </dmn:allowedValues>
     </dmn:itemComponent>
   </dmn:itemDefinition>
-  <dmn:inputData id="_61D6F4E0-15AD-43A8-8BC4-92916EA68884" name="InputData-1">
+  <dmn:inputData id="_61D6F4E0-15AD-43A8-8BC4-92916EA68884" name="Data">
     <dmn:extensionElements/>
-    <dmn:variable id="_9FD31C1C-7A12-49EB-9C08-E0CC25C9522C" name="InputData-1" typeRef="tData"/>
+    <dmn:variable id="_9FD31C1C-7A12-49EB-9C08-E0CC25C9522C" name="Data" typeRef="tData"/>
   </dmn:inputData>
   <dmn:decision id="_92EDBD9D-7E36-470A-89FE-EC63591B38CE" name="Decision-1">
     <dmn:extensionElements/>
     <dmn:variable id="_EFE4B9E6-ED32-43F2-935D-FD8C0996ACDD" name="Decision-1" typeRef="tCrop1"/>
+    <dmn:informationRequirement id="_22AA2F6C-DB69-41CE-A146-A54158D10FBB">
+      <dmn:requiredInput href="#_61D6F4E0-15AD-43A8-8BC4-92916EA68884"/>
+    </dmn:informationRequirement>
     <dmn:decisionTable id="_899E0135-69D4-45F4-99B7-9BD2152281E5" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
-      <dmn:input id="_CFDFBFEF-9161-4631-95B3-054162DAD9C3">
-        <dmn:inputExpression typeRef="number">
-          <dmn:text>input-2</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:input id="_4F0AB7E0-753D-44CF-9D11-E9E71CFB4FDA">
-        <dmn:inputExpression>
-          <dmn:text>input-5</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:input id="_9B149343-5EFE-4E5F-8EFC-8F9F39680774">
-        <dmn:inputExpression>
-          <dmn:text>input-4</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:input id="_D8F6360D-AD24-4288-8AFF-0FF147D6B4CC">
-        <dmn:inputExpression>
-          <dmn:text>input-3</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
       <dmn:input id="_7F3AEC4E-EE7A-4E32-B911-10D957E45C7C">
-        <dmn:inputExpression id="_FFB222A3-6E4A-4ADC-969B-4CE83386BA28">
-          <dmn:text>input-1</dmn:text>
+        <dmn:inputExpression id="_FFB222A3-6E4A-4ADC-969B-4CE83386BA28" typeRef="string">
+          <dmn:text>Data.Nitrogen</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_B287AE18-C0BD-487B-B8AA-26D4D6570025" name="Crop" typeRef="string">
@@ -112,29 +95,17 @@
       </dmn:output>
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_63ED40EA-5AEB-4306-BA6F-5D5E68F4BEB7">
-        <dmn:inputEntry id="_0FA2E303-55F1-42A9-818C-074EC6750E8A">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_CE064D2C-C7F6-45DD-898E-B00C9CDFAB69">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_8503B813-6387-4964-BDB5-7F3E83B081FE">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_691A73C4-8BD5-46E2-A559-A3E19D559664">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
         <dmn:inputEntry id="_0717E8BE-3BED-4634-8362-A8178221B76C">
-          <dmn:text>-</dmn:text>
+          <dmn:text>5</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_130B6405-E9CE-4B0F-A4A5-F15E988DE2C9">
-          <dmn:text/>
+          <dmn:text>"Beans"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_A55CAE3E-B9D5-4395-B5A0-BFEED45376FC">
-          <dmn:text/>
+          <dmn:text>"Vegetables"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_51453762-BDAD-4CE1-BD08-0DD81515E03B">
-          <dmn:text/>
+          <dmn:text>1</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -148,10 +119,6 @@
         <kie:ComponentsWidthsExtension>
           <kie:ComponentWidths dmnElementRef="_899E0135-69D4-45F4-99B7-9BD2152281E5">
             <kie:width>50</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
@@ -178,6 +145,10 @@
         <dc:Bounds x="825" y="205" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-drg-_22AA2F6C-DB69-41CE-A146-A54158D10FBB" dmnElementRef="_22AA2F6C-DB69-41CE-A146-A54158D10FBB">
+        <di:waypoint x="1012" y="318"/>
+        <di:waypoint x="875" y="255"/>
+      </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
 </dmn:definitions>
