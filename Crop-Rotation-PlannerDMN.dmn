@@ -2,8 +2,44 @@
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_25F99D3F-9E8D-416E-ACE9-DF17C399813F" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_C01F92DC-561B-4360-8F37-D3E4D82CD40F" name="Crop-Rotation-PlannerDMN" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_25F99D3F-9E8D-416E-ACE9-DF17C399813F">
   <dmn:extensionElements/>
   <dmn:itemDefinition id="_94B6184A-22F5-4120-8776-27C6006F63E0" name="tData" isCollection="false">
-    <dmn:itemComponent id="_E0A39C51-62CF-4AB9-82C2-3724EBF51271" name="Insert a name" isCollection="false">
-      <dmn:typeRef>Any</dmn:typeRef>
+    <dmn:itemComponent id="_A920CB9D-1677-4FE1-82FE-8EC39058F6C2" name="PreferedCropFamily" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+      <dmn:allowedValues kie:constraintType="enumeration" id="_C40B3BAB-8370-474D-8468-DE726FF503CB">
+        <dmn:text>"Vegetables", "Root Crops"</dmn:text>
+      </dmn:allowedValues>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_8CE8A9B6-2EB1-4113-9D0D-8D79B6CEE111" name="NoOfYears" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+      <dmn:allowedValues kie:constraintType="enumeration" id="_64CB114F-70EC-48B5-A097-5B597FDA4951">
+        <dmn:text>1, 2</dmn:text>
+      </dmn:allowedValues>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_759B0B92-6AED-4AC1-B038-117C5CC45585" name="PreviousPestAttck" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+      <dmn:allowedValues kie:constraintType="enumeration" id="_513EDDB1-60A1-4C3D-8679-253C3189CF50">
+        <dmn:text>"Yes", "No"</dmn:text>
+      </dmn:allowedValues>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_242F6AAC-10DF-4F4A-ABD0-091610A9C755" name="PreviousCropFamily" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+      <dmn:allowedValues kie:constraintType="enumeration" id="_0B2A9E7F-C051-40D9-931F-90CC349231BA">
+        <dmn:text>"Vegetables", "Root Crops"</dmn:text>
+      </dmn:allowedValues>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_7EBB2F89-0FA2-4201-BC80-B669A8D7A3B3" name="District" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+      <dmn:allowedValues kie:constraintType="enumeration" id="_00A87344-7BC3-4623-AF64-1FDF02347858">
+        <dmn:text>"Nuwaraeliya"</dmn:text>
+      </dmn:allowedValues>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_2B6F7197-CBEE-4B5A-976C-DF8448CA1966" name="Potassium" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_E0A39C51-62CF-4AB9-82C2-3724EBF51271" name="Nitrogen" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_946E7FD6-1CD3-4D3E-950C-19818254D604" name="Phosphorus" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
   <dmndi:DMNDI>
