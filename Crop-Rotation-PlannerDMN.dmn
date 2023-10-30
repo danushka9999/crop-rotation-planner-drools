@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_25F99D3F-9E8D-416E-ACE9-DF17C399813F" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_C01F92DC-561B-4360-8F37-D3E4D82CD40F" name="Crop-Rotation-PlannerDMN" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_25F99D3F-9E8D-416E-ACE9-DF17C399813F">
+  <dmn:extensionElements/>
+  <dmn:itemDefinition id="_94B6184A-22F5-4120-8776-27C6006F63E0" name="tData" isCollection="false">
+    <dmn:itemComponent id="_E0A39C51-62CF-4AB9-82C2-3724EBF51271" name="Insert a name" isCollection="false">
+      <dmn:typeRef>Any</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="_3E8CAC39-1031-42A6-B9BF-275E32DCCDED" name="DRG">
+      <di:extension>
+        <kie:ComponentsWidthsExtension/>
+      </di:extension>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</dmn:definitions>
