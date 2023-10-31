@@ -20,9 +20,6 @@
         <dmn:text>"Yes", "No"</dmn:text>
       </dmn:allowedValues>
     </dmn:itemComponent>
-    <dmn:itemComponent id="_5C087D69-CAFC-494A-8E30-28DF55BBF208" name="Insert a name" isCollection="false">
-      <dmn:typeRef>Any</dmn:typeRef>
-    </dmn:itemComponent>
     <dmn:itemComponent id="_242F6AAC-10DF-4F4A-ABD0-091610A9C755" name="PreviousCropFamily" isCollection="false">
       <dmn:typeRef>string</dmn:typeRef>
       <dmn:allowedValues kie:constraintType="enumeration" id="_0B2A9E7F-C051-40D9-931F-90CC349231BA">
@@ -147,10 +144,10 @@
           <dmn:text>[200..250]</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_0619F998-3125-4627-B75E-CAE952821E37">
-          <dmn:text>[100..150]</dmn:text>
+          <dmn:text>[200..250]</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_83D50A4B-C7B3-40BC-B2AC-AC8B2A8AFA95">
-          <dmn:text>[200..250]</dmn:text>
+          <dmn:text>[100..150]</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_BA411903-02BC-4DD4-83D7-85B58AF22188">
           <dmn:text>"Yes"</dmn:text>
@@ -177,22 +174,22 @@
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_873F587A-81C4-4CE9-808B-52065AB04CC9">
-        <dmn:inputExpression typeRef="string">
+        <dmn:inputExpression id="_C30F846F-AA09-4C1C-8EDF-748CB4FF26D5" typeRef="string">
           <dmn:text>Data.PreviousPestAttck</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_A4E534C1-2BA2-4B79-B25F-04ADCCC72754">
-        <dmn:inputExpression typeRef="string">
+        <dmn:inputExpression id="_3CD3ADE8-C0C4-4112-8593-596544CAD19F" typeRef="string">
           <dmn:text>Data.PreviousCropFamily</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_B5D0528B-05A6-49DE-BEB6-D5C572E8E964">
-        <dmn:inputExpression typeRef="number">
+        <dmn:inputExpression id="_18D2FFDB-67E1-4FF7-9FCF-DFC7C37EF5F3" typeRef="number">
           <dmn:text>Data.Nitrogen</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_1F5C2AEC-95E1-4EA0-86C5-39A35F12CD26">
-        <dmn:inputExpression typeRef="string">
+        <dmn:inputExpression id="_365A20DC-B245-48E0-83E4-B0DED1E7ECFE" typeRef="string">
           <dmn:text>Data.PreferedCropFamily</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
@@ -795,7 +792,7 @@
         </dmn:inputValues>
       </dmn:input>
       <dmn:input id="_612D18E8-A294-4CEF-995F-C7663349E3FC">
-        <dmn:inputExpression typeRef="string">
+        <dmn:inputExpression id="_E775791E-25B4-4201-BB96-3E8E54B03136" typeRef="string">
           <dmn:text>Crop1.CropFamily</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
