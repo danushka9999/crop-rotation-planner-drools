@@ -1027,7 +1027,7 @@
           <dmn:text>"Vegetables"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_316AE66E-00EC-477A-9672-5C65BE3CEADD">
-          <dmn:text>"Tomato"</dmn:text>
+          <dmn:text>"Carrot"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_F833C258-C3AD-4748-A500-89B95027456D">
           <dmn:text>"Vegetables"</dmn:text>
