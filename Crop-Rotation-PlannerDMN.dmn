@@ -20,6 +20,9 @@
         <dmn:text>"Yes", "No"</dmn:text>
       </dmn:allowedValues>
     </dmn:itemComponent>
+    <dmn:itemComponent id="_5C087D69-CAFC-494A-8E30-28DF55BBF208" name="Insert a name" isCollection="false">
+      <dmn:typeRef>Any</dmn:typeRef>
+    </dmn:itemComponent>
     <dmn:itemComponent id="_242F6AAC-10DF-4F4A-ABD0-091610A9C755" name="PreviousCropFamily" isCollection="false">
       <dmn:typeRef>string</dmn:typeRef>
       <dmn:allowedValues kie:constraintType="enumeration" id="_0B2A9E7F-C051-40D9-931F-90CC349231BA">
@@ -43,6 +46,12 @@
     </dmn:itemComponent>
   </dmn:itemDefinition>
   <dmn:itemDefinition id="_C9147FE2-3D63-4749-B273-374DDC485060" name="tCrop1" isCollection="false">
+    <dmn:itemComponent id="_F85692CE-6210-4237-8DE5-89D8D7AD9516" name="GrowthPeriod" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_413875B1-1964-486A-A305-EAB940C920AA" name="YearSequence" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
     <dmn:itemComponent id="_ABD3086E-6D67-491A-9B0A-6F031309BA73" name="CropFamily" isCollection="false">
       <dmn:typeRef>string</dmn:typeRef>
       <dmn:allowedValues kie:constraintType="enumeration" id="_8C552AB3-992E-419D-A36C-40760EFB06C4">
@@ -202,6 +211,8 @@
           <dmn:text>1, 2</dmn:text>
         </dmn:outputValues>
       </dmn:output>
+      <dmn:output id="_DD9ED2BF-7595-4F81-957D-EB070E9201C0" name="YearSequence" typeRef="number"/>
+      <dmn:output id="_1CC0C198-860A-4FC4-855B-96C85FA17A13" name="GrowthPeriod" typeRef="string"/>
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_B0AF1E82-5300-4F41-9043-182C76C66DD7">
         <dmn:inputEntry id="_7B4EC0D5-7250-499A-B381-FA9D23C32964">
@@ -227,6 +238,12 @@
         </dmn:outputEntry>
         <dmn:outputEntry id="_7BBBDBAF-A280-4A88-95E8-014FF028F905">
           <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_C6AB5979-2882-4703-B9A9-D4860B3E3037">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_26D885C6-E9BC-4559-A479-E88FF507223C">
+          <dmn:text>"2 months"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -257,6 +274,12 @@
         <dmn:outputEntry id="_A422AB6B-D32A-4B4E-AFE6-44EE2C2C8F94">
           <dmn:text>1</dmn:text>
         </dmn:outputEntry>
+        <dmn:outputEntry id="_A96C7D47-DA4C-43B3-8C16-4B9D42191390">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_C7C71266-BE1A-4EB0-8023-8806AB35BAA4">
+          <dmn:text>"2 months"</dmn:text>
+        </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
         </dmn:annotationEntry>
@@ -285,6 +308,12 @@
         </dmn:outputEntry>
         <dmn:outputEntry id="_89608201-4DA3-40E7-BCBD-14BD52868F9C">
           <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_6B05B759-E356-4A51-979B-7DC56F86E87C">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_0EBB7937-6038-4960-8BEF-E24B0DCC3CCA">
+          <dmn:text>"4 months"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -315,6 +344,12 @@
         <dmn:outputEntry id="_E8DFD500-2810-4FB0-B43B-BB0B75F32660">
           <dmn:text>1</dmn:text>
         </dmn:outputEntry>
+        <dmn:outputEntry id="_ECC33723-61B8-4C11-BEE3-726F684F724B">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_C7FE4820-F024-4DA0-BE36-696B2D90EFC2">
+          <dmn:text>"2 months"</dmn:text>
+        </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
         </dmn:annotationEntry>
@@ -343,6 +378,12 @@
         </dmn:outputEntry>
         <dmn:outputEntry id="_47D97051-74EA-44A8-8CB0-423A5F62EB42">
           <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_18DB3770-D5AD-423E-A5AA-6496CED9A745">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_79F4819C-D411-4D17-86CB-866E1F49E63D">
+          <dmn:text>"3 months"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -373,6 +414,12 @@
         <dmn:outputEntry id="_F6D12D55-9BC3-47AD-A541-8D15C5E36C77">
           <dmn:text>1</dmn:text>
         </dmn:outputEntry>
+        <dmn:outputEntry id="_2F7FE748-476B-40A2-B59F-4AB3B5FC398D">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_097E7DD5-28A3-4F03-8992-8591F25C4E2C">
+          <dmn:text>"2 months"</dmn:text>
+        </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
         </dmn:annotationEntry>
@@ -401,6 +448,12 @@
         </dmn:outputEntry>
         <dmn:outputEntry id="_D02439A9-2174-474B-B335-4A2CF99642E7">
           <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_AE0072CC-6F28-4BF2-8F79-C4D80E61F5DA">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_5FC84C04-D176-4553-88FB-A290D51FFD0A">
+          <dmn:text>"2 months"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -431,6 +484,12 @@
         <dmn:outputEntry id="_2D57D96A-660A-4296-BC6C-ADD56505BE06">
           <dmn:text>1</dmn:text>
         </dmn:outputEntry>
+        <dmn:outputEntry id="_F6400E18-B6D5-4704-8910-A69547C750A8">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_178639E1-51FE-453F-9A61-2EC3C9877300">
+          <dmn:text>"2 months"</dmn:text>
+        </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
         </dmn:annotationEntry>
@@ -459,6 +518,12 @@
         </dmn:outputEntry>
         <dmn:outputEntry id="_7855D721-6BE1-4755-AD01-2C9DDFA1B355">
           <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_57DF622C-24EF-4782-AF8A-E744EE6BF93E">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_F5443871-12EC-4FA7-BBEA-118B4F72B18D">
+          <dmn:text>"3 months"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -489,6 +554,12 @@
         <dmn:outputEntry id="_8F345DEE-4112-429B-B8C6-C234A931A9C2">
           <dmn:text>1</dmn:text>
         </dmn:outputEntry>
+        <dmn:outputEntry id="_272DFA27-8D2B-4103-8DEC-CA1153758362">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_DDE435E3-9120-4934-9418-5CFA8DD36B43">
+          <dmn:text>"2 months"</dmn:text>
+        </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
         </dmn:annotationEntry>
@@ -517,6 +588,12 @@
         </dmn:outputEntry>
         <dmn:outputEntry id="_E0FB93C8-F0C6-43C9-9E30-41BB7A1BD001">
           <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_887BC68F-8245-4BDF-B79F-71B8C1A5547A">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_675E8326-4E88-4781-952F-9D7677EA7A29">
+          <dmn:text>"4 months"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -547,6 +624,12 @@
         <dmn:outputEntry id="_AE0FF05F-78A8-4C5A-A859-9B94467874E7">
           <dmn:text>1</dmn:text>
         </dmn:outputEntry>
+        <dmn:outputEntry id="_87D2D118-C431-4E8C-BFCA-9870012B7939">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_1ED681FF-DDCC-4035-B3B9-B263131ADAEB">
+          <dmn:text>"2 months"</dmn:text>
+        </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
         </dmn:annotationEntry>
@@ -575,6 +658,12 @@
         </dmn:outputEntry>
         <dmn:outputEntry id="_3EB7CC80-6A1B-40B7-8F2E-BFCFBE8A35A4">
           <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_7B32C11C-817E-447D-833C-1C7365EE657D">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_6B28B1C3-6EDA-45AD-8BB8-2717B4DD6FF7">
+          <dmn:text>"3 months"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -605,6 +694,12 @@
         <dmn:outputEntry id="_86F97126-32F7-4120-B347-4BBBC48E9EBB">
           <dmn:text>1</dmn:text>
         </dmn:outputEntry>
+        <dmn:outputEntry id="_28320F2F-BAF9-4AE3-A28C-1FF86D22F502">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_6C1CAEE4-DCB6-477C-81D1-119CEA181A95">
+          <dmn:text>"2 months"</dmn:text>
+        </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
         </dmn:annotationEntry>
@@ -634,6 +729,12 @@
         <dmn:outputEntry id="_CCF4160A-6A18-4AE3-ABAD-DC47E7DA171C">
           <dmn:text>1</dmn:text>
         </dmn:outputEntry>
+        <dmn:outputEntry id="_DAECEEBB-42E3-4B37-8EF6-6F0F007683DB">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_74681D3E-866A-4EDF-AE94-E29F213B46FD">
+          <dmn:text>"4 months"</dmn:text>
+        </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
         </dmn:annotationEntry>
@@ -662,6 +763,12 @@
         </dmn:outputEntry>
         <dmn:outputEntry id="_50327666-19A1-4157-BB46-C0901712615A">
           <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_B2993288-ECAB-40EA-86A0-72A140F3D212">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_C8D8CB5A-4980-49BD-BABA-FC5A8D2F77F7">
+          <dmn:text>"2 months"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -707,6 +814,8 @@
           <dmn:text>1, 2</dmn:text>
         </dmn:outputValues>
       </dmn:output>
+      <dmn:output id="_0BB436D2-3DD8-45AE-8D05-17184A506CF8" name="YearSequence" typeRef="number"/>
+      <dmn:output id="_63246C28-FDC2-4E1A-B7B6-5F90D707708F" name="GrowthPeriod" typeRef="string"/>
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_C10FA526-3A2E-4984-B674-A7F920067984">
         <dmn:inputEntry id="_DEA07163-225D-4F7B-A846-2C5DA8D0C935">
@@ -723,6 +832,12 @@
         </dmn:outputEntry>
         <dmn:outputEntry id="_3FE193D9-7F8F-45C7-8B3D-183C4614D96B">
           <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_4A979EE6-D7D9-49BA-A1CB-6A6A8BCCC731">
+          <dmn:text>2</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_AA4623F6-16DF-48D5-94EB-80EAFCFB6FD6">
+          <dmn:text>"4 months"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -744,6 +859,12 @@
         <dmn:outputEntry id="_543BAA30-DF84-4AD9-AF64-57229E36A80B">
           <dmn:text>1</dmn:text>
         </dmn:outputEntry>
+        <dmn:outputEntry id="_D0C7A031-F6DF-4687-B9E0-D2DA8CEADB83">
+          <dmn:text>2</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_1B4E7D21-E7C2-454E-A40B-D2977A1B5B24">
+          <dmn:text>"3 months"</dmn:text>
+        </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
         </dmn:annotationEntry>
@@ -764,6 +885,12 @@
         <dmn:outputEntry id="_E4256CBB-23B5-42F5-A787-963035ECB1EC">
           <dmn:text>1</dmn:text>
         </dmn:outputEntry>
+        <dmn:outputEntry id="_80AF24DC-0F07-41AB-9504-7B08CE5377F0">
+          <dmn:text>2</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_F34F3C35-721E-482C-8C24-FA346EDE25D2">
+          <dmn:text>"1 month"</dmn:text>
+        </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
         </dmn:annotationEntry>
@@ -783,6 +910,12 @@
         </dmn:outputEntry>
         <dmn:outputEntry id="_1E43D30A-F740-48D6-AB60-A92B03ECAC6D">
           <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_67BA71B7-683A-467B-BC1B-545FD5537AA9">
+          <dmn:text>2</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_C4EA4917-819A-47FD-A3E5-5E72C09868B0">
+          <dmn:text>"4 months"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -815,9 +948,13 @@
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_72626161-4FB7-40FE-B1BA-5A4D7E20C86F">
             <kie:width>50</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
