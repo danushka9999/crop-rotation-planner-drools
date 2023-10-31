@@ -66,9 +66,9 @@
     <dmn:extensionElements/>
     <dmn:variable id="_9FD31C1C-7A12-49EB-9C08-E0CC25C9522C" name="Data" typeRef="tData"/>
   </dmn:inputData>
-  <dmn:decision id="_92EDBD9D-7E36-470A-89FE-EC63591B38CE" name="Decision-1">
+  <dmn:decision id="_92EDBD9D-7E36-470A-89FE-EC63591B38CE" name="IsPossiibleToProceedWithCropRotationPlan">
     <dmn:extensionElements/>
-    <dmn:variable id="_EFE4B9E6-ED32-43F2-935D-FD8C0996ACDD" name="Decision-1" typeRef="string"/>
+    <dmn:variable id="_EFE4B9E6-ED32-43F2-935D-FD8C0996ACDD" name="IsPossiibleToProceedWithCropRotationPlan" typeRef="string"/>
     <dmn:informationRequirement id="_22AA2F6C-DB69-41CE-A146-A54158D10FBB">
       <dmn:requiredInput href="#_61D6F4E0-15AD-43A8-8BC4-92916EA68884"/>
     </dmn:informationRequirement>
@@ -174,7 +174,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="962" y="318" width="100" height="50"/>
+        <dc:Bounds x="1149" y="361" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_92EDBD9D-7E36-470A-89FE-EC63591B38CE" dmnElementRef="_92EDBD9D-7E36-470A-89FE-EC63591B38CE" isCollapsed="false">
@@ -183,12 +183,12 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="825" y="205" width="100" height="50"/>
+        <dc:Bounds x="1049" y="204" width="302" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_22AA2F6C-DB69-41CE-A146-A54158D10FBB" dmnElementRef="_22AA2F6C-DB69-41CE-A146-A54158D10FBB">
-        <di:waypoint x="1012" y="318"/>
-        <di:waypoint x="875" y="255"/>
+        <di:waypoint x="1199" y="361"/>
+        <di:waypoint x="1200" y="254"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
