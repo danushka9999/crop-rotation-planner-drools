@@ -2142,30 +2142,117 @@
       </dmn:output>
       <dmn:output id="_D258B83C-CB16-44FB-BD40-BA95FB51BC95" name="YearSequence" typeRef="number"/>
       <dmn:annotation name="annotation-1"/>
+      <dmn:rule id="_D38BB5B9-E545-47EB-B680-3856538EF7F5">
+        <dmn:inputEntry id="_1268E90F-9C1C-4230-8B05-B3333252D508">
+          <dmn:text>"Legume"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_00190755-3300-4D3B-BB3D-EE4833B2F130">
+          <dmn:text>2</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_5D539B9F-2118-41DF-899C-260114E72039">
+          <dmn:text>"Root Crops"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_54F5CD4E-E14A-40AC-AD9D-E797D993E4B1">
+          <dmn:text>"Tomato"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_8D569B20-D546-440A-BD5F-061DDAC0F42A">
+          <dmn:text>"Vegetables"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_1F565B94-C845-481B-B04C-FA8E9D79A8AE">
+          <dmn:text>"2 months"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_934AFF56-DEFA-4FD3-9BC8-5C7821E2F03A">
+          <dmn:text>2</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_428DC5BE-C1F1-461C-A36C-0D3BDE41189C">
+          <dmn:text>5</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_9CB84BCC-A485-4786-991A-712884CCF7AB">
+        <dmn:inputEntry id="_F404F6CF-2067-488D-B39E-7167A85A61F3">
+          <dmn:text>"Root Crops"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_60C58652-FC22-4329-8D27-ED1F6C0CA438">
+          <dmn:text>2</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_84A8B4AB-CBF9-4545-B122-6F3BF71A0105">
+          <dmn:text>"Root Crops"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_0DE2123B-035D-410A-98C2-52D55AAF1688">
+          <dmn:text>"Tomato"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_F79504BB-0705-4974-A494-61DC6ACEB148">
+          <dmn:text>"Vegetables"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_39127DFA-8CFB-4062-ADA1-DE44421AF36E">
+          <dmn:text>"2 months"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_C2A1AA63-83CF-4FB4-B77B-AF57AB318F3C">
+          <dmn:text>2</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_84457FBC-17ED-4E5B-BF43-6198B0F7A79B">
+          <dmn:text>5</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_2CC7E9F5-0304-4B0E-9B17-1265A61F6A1D">
+        <dmn:inputEntry id="_7C72EFE1-9F4A-438F-B043-84ACD3D502D7">
+          <dmn:text>"Legume"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_FAA779DA-7C48-4059-8BD5-66F996216526">
+          <dmn:text>2</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_0F67D40D-9F21-4D6A-BAC7-03D49B08FC44">
+          <dmn:text>"Vegetables"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_FBFF1D98-113C-4714-815A-6E13D209FB0D">
+          <dmn:text>"Cucumber"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_3D501CE2-CC00-463D-93A1-5CA21D541AF4">
+          <dmn:text>"Vegetables"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_2F9A7A47-45B2-48EB-A043-63EDB4BFDC20">
+          <dmn:text>"2 months"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_20E28C8B-3283-4A73-A76E-E3E69972572C">
+          <dmn:text>2</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_74EFEBF8-71C1-4E63-9E1D-50585DEC0CAA">
+          <dmn:text>5</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
       <dmn:rule id="_32E6321E-4C88-46DE-B0CA-771CA1021593">
         <dmn:inputEntry id="_10ED7B88-3B70-43D1-B657-A26C71C5DF9F">
-          <dmn:text>-</dmn:text>
+          <dmn:text>"Vegetables"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_5582A812-02BD-43EA-A081-B710CDA84C1D">
-          <dmn:text>-</dmn:text>
+          <dmn:text>2</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_E0FE8046-A3D0-42F3-B99E-90E1C7FEBEFE">
-          <dmn:text>-</dmn:text>
+          <dmn:text>"Vegetables"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_9F72E656-B480-4913-9DED-50B834866AA8">
-          <dmn:text/>
+          <dmn:text>"Lettuce"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_067BB960-304F-43CC-8FD7-C0BB078D542F">
-          <dmn:text/>
+          <dmn:text>"Vegetables"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_6B12DAE4-B9AE-452A-A59F-FFFB7845A81F">
-          <dmn:text/>
+          <dmn:text>"2 months"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_63C2EAC1-EA84-43AE-B20C-AA0DA7FBE66A">
-          <dmn:text/>
+          <dmn:text>2</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_106CCF61-74C6-48C1-A87D-8AA91F6F6461">
-          <dmn:text/>
+          <dmn:text>5</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
