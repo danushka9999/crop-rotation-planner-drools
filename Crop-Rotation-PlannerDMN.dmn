@@ -127,23 +127,23 @@
           <dmn:text/>
         </dmn:annotationEntry>
       </dmn:rule>
-      <dmn:rule id="_79BF17B2-0A30-4F42-B273-38D5FA098BCE">
-        <dmn:inputEntry id="_F7826673-1AD7-47AE-89BC-3C4B0DDB4C92">
+      <dmn:rule id="_2EBF9E6F-ADCC-4621-B5FA-DA80FEECC902">
+        <dmn:inputEntry id="_82A7BD13-EC5E-4CBA-8885-8ECA7D143F7F">
           <dmn:text>"Nuwaraeliya"</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_ABDE3DC1-78C3-417D-9194-07E741CCFF41">
+        <dmn:inputEntry id="_4D47FCFD-AF06-47B3-83C4-DBE05D2E8723">
           <dmn:text>"Root Crops"</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_78A227CB-179A-424F-B8CE-9C228A2B2500">
+        <dmn:inputEntry id="_EB81D7EB-B52A-4FEB-893E-679A76143AA1">
           <dmn:text>[200..250]</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_B7640037-5A53-4958-B347-9C63B1D23B51">
+        <dmn:inputEntry id="_0619F998-3125-4627-B75E-CAE952821E37">
           <dmn:text>[100..150]</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_05EBF46B-4F6F-4D50-B059-51CD2CC55EC7">
+        <dmn:inputEntry id="_83D50A4B-C7B3-40BC-B2AC-AC8B2A8AFA95">
           <dmn:text>[200..250]</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_16D4190B-5CE6-426F-8839-236E77FE9AC8">
+        <dmn:outputEntry id="_BA411903-02BC-4DD4-83D7-85B58AF22188">
           <dmn:text>"Yes"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
@@ -533,7 +533,7 @@
           <dmn:text>"Vegetables"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_E00CECA9-3B2D-482A-98A9-8F16C8F4B1EA">
-          <dmn:text>[200..225]</dmn:text>
+          <dmn:text>[200..225)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_BE886B21-0104-4F36-B955-5BEBAEEA39C7">
           <dmn:text>"Root Crops"</dmn:text>
@@ -669,6 +669,127 @@
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
+  <dmn:decision id="_F840574B-A848-4B9B-B10B-8A783DFAE851" name="Crop2">
+    <dmn:extensionElements/>
+    <dmn:variable id="_CD38D467-07F9-4495-BB33-39C47646DAE3" name="Crop2" typeRef="tCrop1"/>
+    <dmn:informationRequirement id="_B28BCD53-20B8-4E98-84BE-38467CB67936">
+      <dmn:requiredDecision href="#_77CA13FA-C529-4E16-AA78-BA44E4464EEB"/>
+    </dmn:informationRequirement>
+    <dmn:informationRequirement id="_B1D3B941-E8D9-4824-A463-4C3BB003BBFD">
+      <dmn:requiredInput href="#_61D6F4E0-15AD-43A8-8BC4-92916EA68884"/>
+    </dmn:informationRequirement>
+    <dmn:decisionTable id="_72626161-4FB7-40FE-B1BA-5A4D7E20C86F" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_DA46DEDA-2DE1-4A2C-8084-D0A751042B0E">
+        <dmn:inputExpression id="_B4DAB9D6-D5C3-4DC4-A322-10DFFE143B5C" typeRef="string">
+          <dmn:text>Data.PreferedCropFamily</dmn:text>
+        </dmn:inputExpression>
+        <dmn:inputValues kie:constraintType="enumeration" id="_37E2F62E-3B14-4A2C-9E67-CEB6FC9AF641">
+          <dmn:text>"Vegetables", "Root Crops"</dmn:text>
+        </dmn:inputValues>
+      </dmn:input>
+      <dmn:input id="_612D18E8-A294-4CEF-995F-C7663349E3FC">
+        <dmn:inputExpression typeRef="string">
+          <dmn:text>Crop1.CropFamily</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_F7E6592F-0A33-4B0C-8B90-8CAACED4631D" name="Crop" typeRef="string">
+        <dmn:outputValues kie:constraintType="enumeration" id="_627FBC49-A429-426C-839A-C0FCE4B205F3">
+          <dmn:text>"Beans", "Potato", "Radish", "Cabbage", "Carrot", "Tomato", "Capsicum", "Cucumber", "Beet", "Lettuce"</dmn:text>
+        </dmn:outputValues>
+      </dmn:output>
+      <dmn:output id="_5A188452-B672-442D-B7C3-DF063547FC20" name="CropFamily" typeRef="string">
+        <dmn:outputValues kie:constraintType="enumeration" id="_20E127C1-3C28-493D-8A26-641E6C649FA0">
+          <dmn:text>"Vegetables", "Root Crops", "Legume"</dmn:text>
+        </dmn:outputValues>
+      </dmn:output>
+      <dmn:output id="_DF58CE65-82AC-4007-BE8D-B6763207A783" name="Year" typeRef="number">
+        <dmn:outputValues kie:constraintType="enumeration" id="_D327A59E-E18D-410C-ACFC-71C1D9434366">
+          <dmn:text>1, 2</dmn:text>
+        </dmn:outputValues>
+      </dmn:output>
+      <dmn:annotation name="annotation-1"/>
+      <dmn:rule id="_C10FA526-3A2E-4984-B674-A7F920067984">
+        <dmn:inputEntry id="_DEA07163-225D-4F7B-A846-2C5DA8D0C935">
+          <dmn:text>"Root Crops"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_2C1A86DC-E0BB-4D4E-BE3F-48FD799DD2E6">
+          <dmn:text>"Legume"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_79151DA8-3FD2-4E55-9A95-68EB6A59FAF9">
+          <dmn:text>"Potato"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_C2434FFC-1EC7-4A43-9C55-7EE4D4F1B647">
+          <dmn:text>"Root Crops"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_3FE193D9-7F8F-45C7-8B3D-183C4614D96B">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_F3326871-8A87-4B00-BC02-18A175DF0AE4">
+        <dmn:inputEntry id="_17182341-2154-4ABD-B99C-E4992EF5EAA2">
+          <dmn:text>"Vegetables"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_1EF505C9-2CCF-47BC-A794-984A0D6730EF">
+          <dmn:text>"Legume"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_24A1D22C-52F0-464B-B17C-10BF18E29665">
+          <dmn:text>"Capsicum"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_9D9D35D6-49A8-4852-8C3F-44632F6219DE">
+          <dmn:text>"Vegetables"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_543BAA30-DF84-4AD9-AF64-57229E36A80B">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_033B10A9-2234-478F-B5A6-0C22D1FAA07D">
+        <dmn:inputEntry id="_6139E5AF-40DE-4C19-9439-72AA6AC3BA0A">
+          <dmn:text>"Root Crops"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_7D3C90B5-8C7D-4E6C-955D-345DD9EE57E9">
+          <dmn:text>"Root Crops"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_31979F90-C69D-4FD4-B54D-A68D36C9F838">
+          <dmn:text>"Radish"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_3976B01A-DBD6-4F4E-B69E-CB95A881A8E2">
+          <dmn:text>"Vegetables"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_E4256CBB-23B5-42F5-A787-963035ECB1EC">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_85B91D24-49D6-4901-9708-6D13199933EC">
+        <dmn:inputEntry id="_540076BB-220D-4118-A2EA-A1EE5DC9D896">
+          <dmn:text>"Vegetables"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_A9E93E23-4C96-4BC5-979E-9397D70FD632">
+          <dmn:text>"Vegetables"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_0ED0C8F5-847F-4A15-AA75-AAA06CBB9C4F">
+          <dmn:text>"Potato"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_3D5BC7B0-BD4A-4C5D-B871-D3B4003A27D4">
+          <dmn:text>"Root Crops"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_1E43D30A-F740-48D6-AB60-A92B03ECAC6D">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
+  </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_3E8CAC39-1031-42A6-B9BF-275E32DCCDED" name="DRG">
       <di:extension>
@@ -688,6 +809,15 @@
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_72626161-4FB7-40FE-B1BA-5A4D7E20C86F">
+            <kie:width>50</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
@@ -724,6 +854,15 @@
         <dc:Bounds x="885" y="196.27796610169491" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-_F840574B-A848-4B9B-B10B-8A783DFAE851" dmnElementRef="_F840574B-A848-4B9B-B10B-8A783DFAE851" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="712" y="196" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_22AA2F6C-DB69-41CE-A146-A54158D10FBB" dmnElementRef="_22AA2F6C-DB69-41CE-A146-A54158D10FBB">
         <di:waypoint x="1208" y="359"/>
         <di:waypoint x="1209" y="246"/>
@@ -735,6 +874,14 @@
       <dmndi:DMNEdge id="dmnedge-drg-_B2193B01-3BF5-4FBF-A45F-8D3318E2CDE3" dmnElementRef="_B2193B01-3BF5-4FBF-A45F-8D3318E2CDE3">
         <di:waypoint x="1208" y="359"/>
         <di:waypoint x="935" y="246.27796610169491"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_B28BCD53-20B8-4E98-84BE-38467CB67936" dmnElementRef="_B28BCD53-20B8-4E98-84BE-38467CB67936">
+        <di:waypoint x="935" y="221.27796610169491"/>
+        <di:waypoint x="812" y="221"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_B1D3B941-E8D9-4824-A463-4C3BB003BBFD" dmnElementRef="_B1D3B941-E8D9-4824-A463-4C3BB003BBFD">
+        <di:waypoint x="1208" y="359"/>
+        <di:waypoint x="762" y="246"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
