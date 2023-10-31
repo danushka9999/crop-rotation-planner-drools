@@ -1423,6 +1423,11 @@
       <dmn:requiredDecision href="#_77CA13FA-C529-4E16-AA78-BA44E4464EEB"/>
     </dmn:informationRequirement>
     <dmn:decisionTable id="_31184815-1653-4F52-849E-98572EFB12A4" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_1AF25FCD-A5A0-45F1-AF68-A6A10C13A85F">
+        <dmn:inputExpression typeRef="number">
+          <dmn:text>Data.NoOfYears</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
       <dmn:input id="_61AE39BE-B74E-49B4-B13C-5FD6D3D3821C">
         <dmn:inputExpression id="_E207F36A-24DF-4723-ABCD-9630CE67D105" typeRef="string">
           <dmn:text>Data.PreferedCropFamily</dmn:text>
@@ -1458,6 +1463,9 @@
       <dmn:output id="_D33AFB0F-1208-43B2-A17E-08D827AACA25" name="YearSequence" typeRef="number"/>
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_6ADD856F-76A2-4DF6-89BA-69BD89FF9730">
+        <dmn:inputEntry id="_14433F46-7B0D-43BE-943D-BA584377B468">
+          <dmn:text>2</dmn:text>
+        </dmn:inputEntry>
         <dmn:inputEntry id="_B3C5D30F-9834-47F6-A5B6-280883AB869E">
           <dmn:text>"Root Crops"</dmn:text>
         </dmn:inputEntry>
@@ -1484,6 +1492,9 @@
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_0873C1EF-A6EA-4A85-BC79-7BEADC072E54">
+        <dmn:inputEntry id="_D0AABF7D-6D23-4D89-8EBD-9AAB2E36A924">
+          <dmn:text>2</dmn:text>
+        </dmn:inputEntry>
         <dmn:inputEntry id="_E8C1A68A-FC06-4C7D-9AE5-D6EFBC358D89">
           <dmn:text>"Root Crops"</dmn:text>
         </dmn:inputEntry>
@@ -1510,6 +1521,9 @@
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_E11DF584-6BCC-475B-BCA0-173EAA604642">
+        <dmn:inputEntry id="_9FEFCD5D-0E97-4F01-A7E7-8A8CD747F3F3">
+          <dmn:text>2</dmn:text>
+        </dmn:inputEntry>
         <dmn:inputEntry id="_4CEC6C41-6DCF-4FFE-AA38-BB85D2783319">
           <dmn:text>"Vegetables"</dmn:text>
         </dmn:inputEntry>
@@ -1536,6 +1550,9 @@
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_F990202E-B2B6-483D-9CA2-8E7FB84074EC">
+        <dmn:inputEntry id="_9C1482BE-F553-4045-8321-469E8E89864C">
+          <dmn:text>2</dmn:text>
+        </dmn:inputEntry>
         <dmn:inputEntry id="_98AF9FAB-5122-4CFE-B040-B1ADBA4020E3">
           <dmn:text>"Vegetables"</dmn:text>
         </dmn:inputEntry>
@@ -1639,6 +1656,7 @@
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_31184815-1653-4F52-849E-98572EFB12A4">
             <kie:width>50</kie:width>
+            <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
