@@ -112,16 +112,16 @@
           <dmn:text>"Vegetables"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_A999766A-1A8D-4D15-81D1-2C91C01E12B9">
-          <dmn:text>150..200</dmn:text>
+          <dmn:text>[150..200)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_62303E0B-2C6C-42D4-ACAB-F61000481FE3">
-          <dmn:text>150..200</dmn:text>
+          <dmn:text>[150..200)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_941C816B-1BA7-45F8-A054-22FD706B166F">
-          <dmn:text>80..120</dmn:text>
+          <dmn:text>[80..120)</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_51453762-BDAD-4CE1-BD08-0DD81515E03B">
-          <dmn:text>"Yes"</dmn:text>
+          <dmn:text>1</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -135,16 +135,16 @@
           <dmn:text>"Root Crops"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_78A227CB-179A-424F-B8CE-9C228A2B2500">
-          <dmn:text>200..250</dmn:text>
+          <dmn:text>[200..250)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_B7640037-5A53-4958-B347-9C63B1D23B51">
-          <dmn:text>100..150</dmn:text>
+          <dmn:text>[100..150)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_05EBF46B-4F6F-4D50-B059-51CD2CC55EC7">
-          <dmn:text>200..252</dmn:text>
+          <dmn:text>[200..250)</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_16D4190B-5CE6-426F-8839-236E77FE9AC8">
-          <dmn:text>"Yes"</dmn:text>
+          <dmn:text>1</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
